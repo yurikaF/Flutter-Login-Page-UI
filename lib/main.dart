@@ -1,27 +1,28 @@
 import 'package:day12_login/Animation/FadeAnimation.dart';
 import 'package:flutter/material.dart';
+import 'color/color.dart';
 
 void main() => runApp(
   MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: HomePage(),
+    home: LoginPage(),
   )
 );
 
-class HomePage extends StatelessWidget {
+class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Const.utilColor["white"],
       body: SingleChildScrollView(
       	child: Container(
 	        child: Column(
 	          children: <Widget>[
 	            Container(
-	              height: 400,
+	              height: 500,
 	              decoration: BoxDecoration(
 	                image: DecorationImage(
-	                  image: AssetImage('assets/images/background.png'),
+	                  image: AssetImage("assets/images/background.png"),
 	                  fit: BoxFit.fill
 	                )
 	              ),
@@ -68,7 +69,7 @@ class HomePage extends StatelessWidget {
 	                    child: FadeAnimation(1.6, Container(
 	                      margin: EdgeInsets.only(top: 50),
 	                      child: Center(
-	                        child: Text("Login", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
+	                        child: Text("Yurika", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
 	                      ),
 	                    )),
 	                  )
