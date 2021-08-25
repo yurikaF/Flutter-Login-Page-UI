@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 class Const {
   static const utilColor = {
     "white": const Color(0xffffffff),
-    "Blue": const Color(0xff4A64FE),
-    "Green": const Color.fromRGBO(5, 179, 147, 1),
-    "lightGreen": const Color.fromRGBO(102, 205, 170, 1),
-    "lightPurple": const Color.fromRGBO(204, 204, 255, 1),
+    "lightPurple": const Color.fromRGBO(221, 187, 238, 1),
     "Purple": const Color.fromRGBO(153, 102, 204, 1),
-    
+    "pink": const Color.fromRGBO(232, 139, 130, 1),
+    "lightpink": const Color.fromRGBO(255, 238, 238, 1),
+    "gray": const Color.fromRGBO(245, 245, 245, 1),
   };
 }

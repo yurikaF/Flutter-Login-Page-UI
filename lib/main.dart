@@ -32,10 +32,10 @@ class LoginPage extends StatelessWidget {
 	                    left: 30,
 	                    width: 80,
 	                    height: 200,
-	                    child: FadeAnimation(1, Container(
+	                    child: FadeAnimation(3, Container(
 	                      decoration: BoxDecoration(
 	                        image: DecorationImage(
-	                          image: AssetImage('assets/images/light-1.png')
+	                          image: AssetImage('assets/images/heart1.png')
 	                        )
 	                      ),
 	                    )),
@@ -44,10 +44,10 @@ class LoginPage extends StatelessWidget {
 	                    left: 140,
 	                    width: 80,
 	                    height: 150,
-	                    child: FadeAnimation(1.3, Container(
+	                    child: FadeAnimation(4.3, Container(
 	                      decoration: BoxDecoration(
 	                        image: DecorationImage(
-	                          image: AssetImage('assets/images/light-2.png')
+	                          image: AssetImage('assets/images/heart2.png')
 	                        )
 	                      ),
 	                    )),
@@ -57,7 +57,7 @@ class LoginPage extends StatelessWidget {
 	                    top: 40,
 	                    width: 80,
 	                    height: 150,
-	                    child: FadeAnimation(1.5, Container(
+	                    child: FadeAnimation(3.5, Container(
 	                      decoration: BoxDecoration(
 	                        image: DecorationImage(
 	                          image: AssetImage('assets/images/clock.png')
@@ -67,9 +67,9 @@ class LoginPage extends StatelessWidget {
 	                  ),
 	                  Positioned(
 	                    child: FadeAnimation(1.6, Container(
-	                      margin: EdgeInsets.only(top: 50),
+	                      margin: EdgeInsets.only(top: 350),
 	                      child: Center(
-	                        child: Text("Yurika", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
+	                        child: Text("HELLO!", style: TextStyle(color:Const.utilColor["lightPurple"], fontSize: 80, fontWeight: FontWeight.bold),),
 	                      ),
 	                    )),
 	                  )
@@ -77,14 +77,14 @@ class LoginPage extends StatelessWidget {
 	              ),
 	            ),
 	            Padding(
-	              padding: EdgeInsets.all(30.0),
+	              padding: EdgeInsets.all(50.0),
 	              child: Column(
 	                children: <Widget>[
-	                  FadeAnimation(1.8, Container(
+	                  FadeAnimation(2.8, Container(
 	                    padding: EdgeInsets.all(5),
 	                    decoration: BoxDecoration(
-	                      color: Colors.white,
-	                      borderRadius: BorderRadius.circular(10),
+	                      color: Const.utilColor["lightpink"],
+	                      borderRadius: BorderRadius.circular(30),
 	                      boxShadow: [
 	                        BoxShadow(
 	                          color: Color.fromRGBO(143, 148, 251, .2),
@@ -98,13 +98,13 @@ class LoginPage extends StatelessWidget {
 	                        Container(
 	                          padding: EdgeInsets.all(8.0),
 	                          decoration: BoxDecoration(
-	                            border: Border(bottom: BorderSide(color: Colors.grey[100]))
+	                            border: Border(bottom: BorderSide(color: Const.utilColor["white"],))
 	                          ),
 	                          child: TextField(
 	                            decoration: InputDecoration(
 	                              border: InputBorder.none,
 	                              hintText: "Email or Phone number",
-	                              hintStyle: TextStyle(color: Colors.grey[400])
+	                              hintStyle: TextStyle(color: Const.utilColor["lightPurple"],)
 	                            ),
 	                          ),
 	                        ),
@@ -114,7 +114,7 @@ class LoginPage extends StatelessWidget {
 	                            decoration: InputDecoration(
 	                              border: InputBorder.none,
 	                              hintText: "Password",
-	                              hintStyle: TextStyle(color: Colors.grey[400])
+	                              hintStyle: TextStyle(color: Const.utilColor["lightPurple"],)
 	                            ),
 	                          ),
 	                        )
@@ -128,17 +128,17 @@ class LoginPage extends StatelessWidget {
 	                      borderRadius: BorderRadius.circular(10),
 	                      gradient: LinearGradient(
 	                        colors: [
-	                          Color.fromRGBO(143, 148, 251, 1),
-	                          Color.fromRGBO(143, 148, 251, .6),
+	                          Color.fromRGBO(232, 139, 130, 1),
+	                          Color.fromRGBO(230, 204, 255, 1),
 	                        ]
 	                      )
 	                    ),
 	                    child: Center(
-	                      child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+	                      child: Text("Login", style: TextStyle(color:   Const.utilColor["white"],fontWeight: FontWeight.bold),),
 	                    ),
 	                  )),
 	                  SizedBox(height: 70,),
-	                  FadeAnimation(1.5, Text("Forgot Password?", style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),)),
+	                  FadeAnimation(1.5, Text("Forgot Password?", style: TextStyle(color: Const.utilColor["Purple"],))),
 	                ],
 	              ),
 	            )
